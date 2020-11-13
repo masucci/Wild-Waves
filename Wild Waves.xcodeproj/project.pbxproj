@@ -13,6 +13,11 @@
 		88F8F927255D2E800075C8CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F8F925255D2E800075C8CA /* Main.storyboard */; };
 		88F8F929255D2E840075C8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F8F928255D2E840075C8CA /* Assets.xcassets */; };
 		88F8F92C255D2E840075C8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F8F92A255D2E840075C8CA /* LaunchScreen.storyboard */; };
+		88F8F935255D2F550075C8CA /* SpotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8F934255D2F550075C8CA /* SpotData.swift */; };
+		88F8F939255D30DB0075C8CA /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8F938255D30DB0075C8CA /* WeatherData.swift */; };
+		88F8F941255D43110075C8CA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8F93F255D43110075C8CA /* CustomTableViewCell.swift */; };
+		88F8F942255D43110075C8CA /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F8F940255D43110075C8CA /* CustomTableViewCell.xib */; };
+		88F8F94A255E91F10075C8CA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8F949255E91F10075C8CA /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		88F8F928255D2E840075C8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88F8F92B255D2E840075C8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88F8F92D255D2E840075C8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F8F934255D2F550075C8CA /* SpotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotData.swift; sourceTree = "<group>"; };
+		88F8F938255D30DB0075C8CA /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		88F8F93F255D43110075C8CA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		88F8F940255D43110075C8CA /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		88F8F949255E91F10075C8CA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,25 @@
 				88F8F91F255D2E800075C8CA /* AppDelegate.swift */,
 				88F8F921255D2E800075C8CA /* SceneDelegate.swift */,
 				88F8F923255D2E800075C8CA /* ViewController.swift */,
+				88F8F949255E91F10075C8CA /* DetailsView.swift */,
+				88F8F93F255D43110075C8CA /* CustomTableViewCell.swift */,
+				88F8F940255D43110075C8CA /* CustomTableViewCell.xib */,
+				88F8F937255D2F590075C8CA /* Model */,
 				88F8F925255D2E800075C8CA /* Main.storyboard */,
 				88F8F928255D2E840075C8CA /* Assets.xcassets */,
 				88F8F92A255D2E840075C8CA /* LaunchScreen.storyboard */,
 				88F8F92D255D2E840075C8CA /* Info.plist */,
 			);
 			path = "Wild Waves";
+			sourceTree = "<group>";
+		};
+		88F8F937255D2F590075C8CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88F8F934255D2F550075C8CA /* SpotData.swift */,
+				88F8F938255D30DB0075C8CA /* WeatherData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +149,7 @@
 			files = (
 				88F8F92C255D2E840075C8CA /* LaunchScreen.storyboard in Resources */,
 				88F8F929255D2E840075C8CA /* Assets.xcassets in Resources */,
+				88F8F942255D43110075C8CA /* CustomTableViewCell.xib in Resources */,
 				88F8F927255D2E800075C8CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88F8F924255D2E800075C8CA /* ViewController.swift in Sources */,
+				88F8F94A255E91F10075C8CA /* DetailsView.swift in Sources */,
+				88F8F939255D30DB0075C8CA /* WeatherData.swift in Sources */,
+				88F8F935255D2F550075C8CA /* SpotData.swift in Sources */,
+				88F8F941255D43110075C8CA /* CustomTableViewCell.swift in Sources */,
 				88F8F920255D2E800075C8CA /* AppDelegate.swift in Sources */,
 				88F8F922255D2E800075C8CA /* SceneDelegate.swift in Sources */,
 			);
