@@ -18,6 +18,7 @@
 		88F8F941255D43110075C8CA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8F93F255D43110075C8CA /* CustomTableViewCell.swift */; };
 		88F8F942255D43110075C8CA /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F8F940255D43110075C8CA /* CustomTableViewCell.xib */; };
 		88F8F94A255E91F10075C8CA /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8F949255E91F10075C8CA /* DetailsView.swift */; };
+		88F8F951255EA3370075C8CA /* surfVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 88F8F950255EA3370075C8CA /* surfVideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		88F8F93F255D43110075C8CA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		88F8F940255D43110075C8CA /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		88F8F949255E91F10075C8CA /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		88F8F950255EA3370075C8CA /* surfVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = surfVideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		88F8F91E255D2E800075C8CA /* Wild Waves */ = {
 			isa = PBXGroup;
 			children = (
+				88F8F94C255EA1A80075C8CA /* Assets */,
 				88F8F91F255D2E800075C8CA /* AppDelegate.swift */,
 				88F8F921255D2E800075C8CA /* SceneDelegate.swift */,
 				88F8F923255D2E800075C8CA /* ViewController.swift */,
@@ -88,6 +91,14 @@
 				88F8F938255D30DB0075C8CA /* WeatherData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		88F8F94C255EA1A80075C8CA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				88F8F950255EA3370075C8CA /* surfVideo.mp4 */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			files = (
 				88F8F92C255D2E840075C8CA /* LaunchScreen.storyboard in Resources */,
 				88F8F929255D2E840075C8CA /* Assets.xcassets in Resources */,
+				88F8F951255EA3370075C8CA /* surfVideo.mp4 in Resources */,
 				88F8F942255D43110075C8CA /* CustomTableViewCell.xib in Resources */,
 				88F8F927255D2E800075C8CA /* Main.storyboard in Resources */,
 			);

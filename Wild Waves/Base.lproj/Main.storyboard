@@ -35,16 +35,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfBanner" translatesAutoresizingMaskIntoConstraints="NO" id="v6P-n8-bNq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="202"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8I-VF-GeP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="202"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="e8I-VF-GeP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2iy-kg-X6t"/>
+                            <constraint firstItem="e8I-VF-GeP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Lx-ew-p2K"/>
                             <constraint firstItem="cs2-ja-p8l" firstAttribute="top" secondItem="v6P-n8-bNq" secondAttribute="bottom" id="BMh-aE-7jf"/>
                             <constraint firstItem="v6P-n8-bNq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KEc-6Z-fRj"/>
                             <constraint firstItem="cs2-ja-p8l" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Shx-88-ek2"/>
                             <constraint firstAttribute="bottom" secondItem="a85-WZ-Zxv" secondAttribute="bottom" id="YGt-xy-mBw"/>
                             <constraint firstItem="cs2-ja-p8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YOv-BK-3s1"/>
                             <constraint firstItem="a85-WZ-Zxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zau-Yg-ZEr"/>
+                            <constraint firstItem="e8I-VF-GeP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aUX-GQ-yG1"/>
+                            <constraint firstItem="cs2-ja-p8l" firstAttribute="top" secondItem="e8I-VF-GeP" secondAttribute="bottom" id="b7W-pz-pcw"/>
                             <constraint firstItem="a85-WZ-Zxv" firstAttribute="top" secondItem="cs2-ja-p8l" secondAttribute="bottom" id="dwt-fn-vUX"/>
                             <constraint firstItem="cs2-ja-p8l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="202" id="l0S-y9-DCq"/>
                             <constraint firstItem="v6P-n8-bNq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sfo-8w-LU7"/>
@@ -62,6 +70,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="a85-WZ-Zxv" id="iR7-Pk-ieT"/>
+                        <outlet property="videoView" destination="e8I-VF-GeP" id="s2s-YB-8gm"/>
                         <segue destination="Ok7-Os-Ghu" kind="show" identifier="detailsView" id="eGa-7d-TcI"/>
                     </connections>
                 </viewController>

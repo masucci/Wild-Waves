@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class ViewController: UIViewController {
 
@@ -24,6 +26,21 @@ class ViewController: UIViewController {
         let nib = UINib.init(nibName: "CustomTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
         
+        //MARK: - Video Player
+        let url = Bundle.main.url(forResource: "surfVideo", withExtension: "mp4")!
+        player = AVPlayer(url: url)
+        avpController.player = player
+        avpController.view.frame = videoView.layer.bounds
+        avpController.videoGravity = AVLayerVideoGravity.resize
+        avpController.showsPlaybackControls = false
+        videoView.addSubview(avpController.view)
+        player.play()
+        
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: nil) { (_) in
+            self.player.seek(to: CMTime.zero)
+            self.player.play()
+        }
+        
         //MARK: - Title Navbar Logo
         
         let logo = UIImage(named: "navlogo")
@@ -34,8 +51,11 @@ class ViewController: UIViewController {
         self.navigationItem.titleView = imageView
     }
     
+    var player: AVPlayer!
+    var avpController = AVPlayerViewController()
     
-    var isLoaded = false
+    @IBOutlet weak var videoView: UIView!
+
     var spotData = [SpotData]()
     var weatherData = [WeatherData]()
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=b729cb8a619ffb92a00b53bf2d3656f0&units=metric"
@@ -72,7 +92,6 @@ class ViewController: UIViewController {
             }
          
             
-     
             
         }
         dataTask.resume()
