@@ -127,7 +127,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             view.latitude = spotData[indexPath.row].latitude
             view.longitude = spotData[indexPath.row].longitude
             view.spotN = spotData[indexPath.row].spot_name
-            view.windspeed = 1.0
         }
     }
     
