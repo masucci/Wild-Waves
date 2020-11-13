@@ -66,13 +66,7 @@ class ViewController: UIViewController {
                 return
             }
             self.spotData = self.parse(data: data)
-            var count = 0
-            for element in self.spotData {
-                if count < 10 {
-                self.fetchWeather(latitude: element.latitude, longitude: element.longitude)
-                    count += 1
-                }
-            }
+
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -98,13 +92,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
      
         cell?.commonInit(spotData[indexPath.row].spot_name, "logo")
-//        cell?.commonInit(String(weatherData[indexPath.row].wind.speed), "logo")
     
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "detailsView", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailsView" {
+            let indexPath = sender as! IndexPath
+            let view = segue.destination as! DetailsView
+            view.countyN = spotData[indexPath.row].county_name
+            view.latitude = spotData[indexPath.row].latitude
+            view.longitude = spotData[indexPath.row].longitude
+            view.spotN = spotData[indexPath.row].spot_name
+            view.windspeed = 1.0
+        }
     }
     
 }
