@@ -134,42 +134,42 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 //MARK: - WeatherData JSON Helper
 
-extension ViewController {
-
-    func fetchWeather(latitude: Double, longitude: Double) {
-        let urlString = "\(weatherURL)&lat=\(latitude)&lon=\(longitude)"
-        performRequest(with: urlString)
-    }
-    
-    func parseJSON(_ weatherData: Data) -> WeatherData? {
-        let decoder = JSONDecoder()
-        do {
-            let result = try decoder.decode(WeatherData.self, from: weatherData)
-            return result
-        } catch {
-            print(error)
-        }
-        return nil
-    }
-    
-     func performRequest(with urlString: String) {
-        if let url = URL(string: urlString) {
-            let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) { (data, response, error) in
-                guard error == nil, let data = data else {
-                    return
-                }
-                if let weatherData = self.parseJSON(data) {
-                    self.weatherData.append(weatherData)
-                }
-                print(self.weatherData)
-
-            }
-            task.resume()
-        }
-    }
-    
-    
-    
-    
-}
+//extension ViewController {
+//
+//    func fetchWeather(latitude: Double, longitude: Double) {
+//        let urlString = "\(weatherURL)&lat=\(latitude)&lon=\(longitude)"
+//        performRequest(with: urlString)
+//    }
+//
+//    func parseJSON(_ weatherData: Data) -> WeatherData? {
+//        let decoder = JSONDecoder()
+//        do {
+//            let result = try decoder.decode(WeatherData.self, from: weatherData)
+//            return result
+//        } catch {
+//            print(error)
+//        }
+//        return nil
+//    }
+//
+//     func performRequest(with urlString: String) {
+//        if let url = URL(string: urlString) {
+//            let session = URLSession(configuration: .default)
+//            let task = session.dataTask(with: url) { (data, response, error) in
+//                guard error == nil, let data = data else {
+//                    return
+//                }
+//                if let weatherData = self.parseJSON(data) {
+//                    self.weatherData.append(weatherData)
+//                }
+//                print(self.weatherData)
+//
+//            }
+//            task.resume()
+//        }
+//    }
+//
+//
+//
+//
+//}

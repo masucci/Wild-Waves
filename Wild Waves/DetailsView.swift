@@ -47,7 +47,6 @@ class DetailsView: UIViewController {
     
 }
 
-// https://api.openweathermap.org/data/2.5/weather?appid=b729cb8a619ffb92a00b53bf2d3656f0&units=metric&lat=41.86938356954192&lon=-124.2144472484002
 
 extension DetailsView {
 
