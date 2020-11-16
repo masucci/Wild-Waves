@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/masucci/Wild-Waves">
-    <img src="images/logo.png" alt="Logo" width="300" height="353">
+    <img src="images/logo.png" alt="Logo" width="300" height="300">
   </a>
 
   <h3 align="center">Wild Waves</h3>
@@ -42,7 +42,7 @@ The project was entirely coded in Swift.
 * [Swift](https://swift.org/)
 * [UIKit](https://developer.apple.com/documentation/uikit)
 * [AVFoundation] (https://developer.apple.com/av-foundation/)
-* [JSON File](https://s3.eu-west-2.amazonaws.com/lpad-public-assets/software-test/all-spots.json)
+* [JSON File] (https://s3.eu-west-2.amazonaws.com/lpad-public-assets/software-test/all-spots.json)
 * [API] (https://api.openweathermap.org)
 
 ### Contact me
