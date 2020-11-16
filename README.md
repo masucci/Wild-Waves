@@ -17,7 +17,7 @@
     <a href="https://github.com/masucci/Wild-Waves"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://drive.google.com/file/d/16qVfjCkNWew0xXa8ZZ8xfKwZvnkbBYmr/view?usp=sharing">View Demo</a>
   </p>
 </p>
 
