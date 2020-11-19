@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
     var spotData = [SpotData]()
     var weatherData = [WeatherData]()
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=b729cb8a619ffb92a00b53bf2d3656f0&units=metric"
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=###&units=metric"
     
     //MARK: - SpotData JSON Helper
     
